@@ -129,8 +129,11 @@ Resources:
           RequireNumbers: false
           RequireSymbols: false
           RequireUppercase: false
-      UsernameAttributes:
-        - email
+#      UsernameAttributes:
+#        - email
+      UsernameConfiguration:
+        CaseSensitive: true
+        
       MfaConfiguration: "OFF"
       LambdaConfig:
         CreateAuthChallenge: !GetAtt CreateAuthChallenge.Arn
